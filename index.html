@@ -1,0 +1,275 @@
+
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<style>
+    @font-face{
+        font-family:'Lato-Regular';
+        src:url('fonts/Lato-Regular.ttf');
+        font-weight:normal;
+        font-style:normal;
+    }
+    
+    @font-face{
+        font-family:'Lato-Bold';
+        src:url('fonts/Lato-Bold.ttf') format('truetype');
+        font-weight:bold; 
+        font-style:normal;
+    }
+    
+    @font-face{
+        font-family:'Lato-Black';
+        src:url('fonts/Lato-Black.ttf') format('truetype');
+        font-weight:bold; 
+        font-style:normal;
+    }
+    
+    body{
+        font-family: "Lato-regular";
+    }
+    
+    .row{
+        position: absolute;
+    }
+    
+    .wrapp{
+        position: absolute;
+        top: 0px;
+    }
+    
+    .title{
+        color: white;
+        position: absolute;
+    }
+    
+    h1{
+        font-family: "Lato-Black";
+        background-color:darkred;
+        display: inline;
+        letter-spacing: 10px;
+        font-size: 35px;
+        padding: 15px 15px 25px 25px;
+    }
+    
+    .title p{
+        margin-top: -5px;
+        margin-left: 25px;;
+        font-size: 15px;
+        letter-spacing: 1px;
+        display: inline-block;
+        width: 150%;
+    }
+    
+    #sideBar{
+       
+    }
+    
+    .aba{
+        list-style: none;
+        display: inline-block;
+        color: white;
+        
+    }
+    .aba li{
+        float: left;
+        margin-right: 5px;
+        padding: 5px 10px 5px 10px;
+        background-color: darkred;
+        cursor: pointer;
+    }
+    
+    .aba a{
+        color: white;
+        
+    }
+    /* Smartphones (portrait and landscape) ----------- */
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px) {
+    /* Styles */
+    }
+
+    /* Smartphones (landscape) ----------- */
+    @media only screen
+    and (min-width : 321px) {
+    /* Styles */
+    }
+
+    /* Smartphones (portrait) ----------- */
+    @media only screen
+    and (max-width : 320px) {
+    /* Styles */
+    }
+
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px) {
+    /* Styles */
+    }
+
+    /* iPads (landscape) ----------- */
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : landscape) {
+    /* Styles */
+    }
+
+    /* iPads (portrait) ----------- */
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : portrait) {
+    /* Styles */
+    }
+
+    /* The New iPad (iPad 3) ----------- */
+    @media only screen
+    and (min-device-width: 1536px)
+    and (max-device-width: 2048px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+    /* Styles */
+    }
+
+    /* iPhone 4 ----------- */
+    @media
+    only screen and (-webkit-min-device-pixel-ratio : 1.5),
+    only screen and (min-device-pixel-ratio : 1.5) {
+    /* Styles */
+    }
+    
+</style>
+</head>
+
+<title></title>
+
+<body onresize="tela()">
+   <!-- Inicio do mapa -->
+        <iframe width="600" height="450" frameborder="0" style="border:0;margin-left:-10px;margin-top:-10px;" src="https://www.google.com/maps/embed/v1/place?q=R.%20Salvador%20Sim%C3%B5es%2C%201432%20-%20Vila%20Dom%20Pedro%20I%2CS%C3%A3o%20Paulo%20-%20SP%2C04276-000&key=AIzaSyBdhV1Of3ybtRu8MnjvOQ8VlTWmJhYJrLw"></iframe>
+   <!-- fim do mapa -->
+   <!-- elementos suspensos -->
+   <span class="wrapp">
+       <div class="container-fluid">
+          
+        <div class="row">
+          <div class="title">
+               <div class="col-md-4 ">
+                   <h1>Filadelfia</h1>
+                   <p>Igreja Batista Regular Filadelfia</p>
+               </div>
+          </div>
+          
+          <div class="col-md-4" id="sideBar">
+            <ul class="aba">
+                <a href="https://www.facebook.com/FiladelfiaIBR"><li>Facebook</li></a>
+                <a href="mailto:lucasgomesdesantana@gmail.com"><li>Contato</li></a>
+            </ul>
+             <!--<div class="" id="face">
+                 <h2>Facebook</h2>
+             </div>
+             <div class="box">
+                 <p>Visite nossa página no facebook</p>
+             </div>-->
+             
+              
+          </div>
+          </div>
+          
+       </div>
+    
+
+    
+    </span>
+   <!-- fim elementos suspensos -->
+    
+    
+    <script>
+           function tela(){
+                var winHeigth= window.innerHeight
+                            || document.documentElement.clientHeight
+                            || document.body.clientHeight; 
+            
+                var winWidth = window.innerWidth
+                            || document.documentElement.clientWidth
+                            || document.body.clientWidth;
+               
+                var iframe = document.querySelector('iframe');
+                var title = document.querySelector('.title');
+                var row = document.querySelector('.row');
+                var sidebar = document.querySelector('#sideBar');
+               
+               iframe.style.position = 'absolute';
+               
+               if( winWidth < 630 ){
+                   var titlePos = winHeigth - 90;  
+                   
+                   
+                   var li = document.querySelector('li'); 
+                   var ul = document.querySelector('ul'); 
+                   var h1 = document.querySelector('h1');
+                   
+                   var h1Width = h1.offsetWidth;
+                   var sidePos = '-' + 40;
+                   
+                   row.style.top = titlePos + 'px';
+                   title.style.marginTop = '-' + 40 +'px';
+                   sidebar.style.marginLeft = sidePos + 'px';
+                   
+                   ul.style.marginTop = 30 +'px';
+                   li.style.marginBottom = 15 +'px';
+                   ul.style.width = h1Width +'px';
+                   
+               }else if(winWidth < 780){
+                    var titlePos = winHeigth - 90;  
+                   
+                   
+                   var li = document.querySelector('li'); 
+                   var ul = document.querySelector('ul'); 
+                   var h1 = document.querySelector('h1');
+                   
+                   var h1Width = h1.offsetWidth;
+                   
+                   var sidePos = h1Width -10;
+                   
+                   row.style.top = titlePos + 'px';
+                   sidebar.style.marginLeft = sidePos + 'px';
+                   
+                   ul.style.marginTop ='-' + 17 +'px';
+                   li.style.marginBottom = 15 +'px';
+               }else{
+                    var titlePos = winHeigth - 90;               
+                    var sidePos = winWidth - 280;
+               
+                title.style.top = titlePos + 'px';
+                sidebar.style.marginLeft = sidePos + 'px';
+                   
+               }
+               
+                iframe.setAttribute('height',winHeigth);
+                iframe.setAttribute('width', winWidth);
+               
+        }
+            
+        document.addEventListener('DOMContentLoaded', function() {
+            tela();
+        }, false);
+           
+            
+  
+    </script>
+
+</body>
+
+</html>
+
